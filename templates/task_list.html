@@ -1,0 +1,95 @@
+{%extends "layout.html"%}
+{%block content%}
+<div class = "task_list">
+	<h2>List of Tasks</h2>
+	<p>Below is a list of tasks.</p>
+	<div class="mytable">
+		<div class="table_title">
+			<p>Tasks to complete:</p>
+		</div><br>
+		<table class="content-table">
+			<thead>
+				<th class="column1">Task Title</th>
+				<th class="column2">Due Date</th>
+				<th class="column3">Est. Time (hrs)</th>
+				<th class="column4">Created By</th>
+				<th class="column5">Action</th>
+			</thead>
+			<tbody>
+				{% for Task in output_data %}
+					<form action="{{url_for('task_details')}}" method="POST"> 
+						<tr>
+							<td class="column1">{{ Task.title }}</td>
+							<td class="column2">{{ Task.due_date }}</td>
+							<td class="column3">{{ Task.est_time }}</td>
+							<td class="column4">{{ Task.created_by }}</td>
+							<input type="hidden" name="task_id" value = "{{ Task.id }}" />
+							<td class="column5"><button type="submit" class="view-button">View task</button></td>
+						</tr>
+					</form>	
+				{% endfor %}
+			</tbody>
+		</table>
+	</div>
+	<br>
+	<div class="mytable">
+		<div class="table_title">
+			<p>Overdue tasks:</p>
+		</div><br>
+		<table class="content-table">
+			<thead>
+				<th class="column1">Task Title</th>
+				<th class="column2">Due Date</th>
+				<th class="column3">Est. Time (hrs)</th>
+				<th class="column4">Created By</th>
+				<th class="column5">Action</th>
+			</thead>
+			<tbody>
+				{% for Task in output_data2 %}
+					<form action="{{url_for('task_details')}}" method="POST"> 
+						<tr>
+							<td class="column1">{{ Task.title }}</td>
+							<td class="column2">{{ Task.due_date }}</td>
+							<td class="column3">{{ Task.est_time }}</td>
+							<td class="column4">{{ Task.created_by }}</td>
+							<input type="hidden" name="task_id" value = "{{ Task.id }}" />
+							<td class="column5"><button type="submit" class="view-button">View task</button></td>
+						</tr>
+					</form>	
+				{% endfor %}
+			</tbody>
+		</table>
+	</div>
+	<br>
+	<div class="mytable">
+		<div class="table_title">
+			<p>Completed tasks:</p>
+		</div><br>
+		<table class="content-table">
+			<thead>
+				<th class="column1">Task Title</th>
+				<th class="column2">Due Date</th>
+				<th class="column3">Est. Time (hrs)</th>
+				<th class="column4">Created By</th>
+				<th class="column5">Action</th>
+			</thead>
+			<tbody>
+				{% for Task in output_data3 %}
+					<form action="{{url_for('task_details')}}" method="POST"> 
+						<tr>
+							<td class="column1">{{ Task.title }}</td>
+							<td class="column2">{{ Task.due_date }}</td>
+							<td class="column3">{{ Task.est_time }}</td>
+							<td class="column4">{{ Task.created_by }}</td>
+							<input type="hidden" name="task_id" value = "{{ Task.id }}" />
+							<td class="column5"><button type="submit" class="view-button">View task</button></td>
+						</tr>
+					</form>	
+				{% endfor %}
+			</tbody>
+		</table>
+	</div>
+
+	
+</div>
+{%endblock%}

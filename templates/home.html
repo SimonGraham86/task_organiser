@@ -1,0 +1,18 @@
+{%extends "layout.html"%}
+{%block content%}
+<script type="text/javascript" src="{{cdn_js | safe}}"></script>
+<div class = "home">
+	<h2>Welcome to the Task Manager</h2>
+	<p>Overview of Tasks</p>
+	<div class="dashboard">
+		<div class="dash_title">
+			<p>Task Dashboard</p>
+		</div><br>
+		<div>
+		{{ script1 | safe }}
+		{{ div1 | safe}}
+		</div>
+	</div>
+	<br>
+</div>
+{%endblock%}

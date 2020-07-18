@@ -1,0 +1,41 @@
+{%extends "layout.html"%}
+{%block content%}
+<div class="details">
+	<h2>Task Details</h2>
+	<p>You can edit the task details below.</p>
+	
+	<form class="task_details" method="POST">
+
+		<input type="hidden" name="task_id" value="{{ task.id }}">
+		
+		<p>
+			<div class="details1">Title:</div>
+			<div class="details2">{{ task.title }}</div>
+		</p> <br>
+
+		<p>
+			<div class="details1">Created Date:</div>
+			<div class="details2">{{ task.created_date }}</div> 
+		</p> <br>
+
+		<p>
+			<div class="details1">Due Date:</div>
+			<div class="details2">{{ task.due_date }}</div> 
+		</p> <br>
+
+		<p>
+			<div class="details1">Est. Time to Complete (hrs):</div>
+			<div class="details2">{{ task.est_time }}</div> 
+		</p> <br>
+
+		<p>
+			<div class="details1">Details:</div>
+			<div class="details2">{{ task.details }}</div> 
+		</p> <br>
+
+		<button type="submit" formaction="{{url_for('task_edit')}}">Edit</button> <br>
+		<button type="submit" formaction="{{url_for('task_complete')}}">Mark Complete</button> <br>
+	</form>
+	<br>
+</div>
+{%endblock%}

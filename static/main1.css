@@ -1,0 +1,389 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #060;
+}
+
+
+
+
+/*********************************************
+ * Header  ***********************************
+ *********************************************/
+
+header {
+	background-color: #8FBC8F;
+	height: 50px;
+	width: 100%;
+	opacity: 0.9;
+  z-index: 12;
+  position: fixed;
+	margin-bottom: 10px;
+}
+
+header h1.logo {
+	margin-top: 12px;
+	margin-bottom: 12px;
+	font-size: 1.7em;
+	color: #fff;
+  	text-transform: uppercase;
+  	float: left;
+}
+
+.menu {
+  	float: right;
+  	margin-top: 15px;
+}
+
+.menu li {
+  	display: inline;
+}
+
+.menu li + li {
+  	margin-left: 15px;
+}
+
+.menu li a {
+  	background-color: #444;
+  	text-decoration: none;
+  	color: #fff;
+  	padding: 8px;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+/*********************************************
+ * Body **************************************
+ *********************************************/
+
+.container {
+  	width: 95%;
+    height: 95%;
+  	margin: auto;
+}
+
+h2 {
+  font-size: xx-large;
+}
+
+p {
+  font-size: x-large;
+}
+.container-body {
+  padding-top: 62px;
+  width: 95%;
+  height: 95%;
+  margin: auto;
+}
+
+
+/*********************************************
+ * Home Page *********************************
+ *********************************************/
+
+div.home {
+  padding: 10px 0 30px 15px;
+  background-color: #E6E6FA;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+
+div.dashboard {
+  margin: auto;
+  width: 80%;
+  min-width: 650px;
+  min-height: 700px;
+  border-radius: 6px 6px 6px 6px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.dash_title {
+  width: 90%;
+  margin: auto 0;
+}
+
+.dashboard::-webkit-scrollbar {
+    width: 12px;
+}
+
+.dashboard::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+
+.dashboard::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #E6E6FA;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+/*********************************************
+ * Task_new Page *****************************
+ *********************************************/
+
+div.new_tasks {
+  padding: 10px 0 30px 15px;
+  background-color: #E6E6FA;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+
+.new_tasks form {
+  margin: auto;
+  width: 50%;
+  padding: 20px;
+  display: table;
+  float: center;
+  background-color: #8FBC8F;
+  text-align: center;
+  border-radius: 6px 6px 6px 6px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.new_tasks label {
+  display: inline-block;
+  width: 190px;
+  padding: 7px;
+  text-align: left;
+  font-size: 1em;
+  vertical-align: top;
+  color: #fff;
+  font-weight: bold;
+}
+
+.new_tasks input {
+  width: 300px;
+  height: 25px;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 6px 6px 6px 6px;
+  border-width: 1px;
+  border-color: #E6E6FA;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.new_tasks textarea {
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 6px 6px 6px 6px;
+  border-width: 1px;
+  border-color: #E6E6FA;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.new_tasks select {
+  width: 324px;
+  height: 45px;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 6px 6px 6px 6px;
+  border-width: 1px;
+  border-color: #E6E6FA;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.new_tasks button {
+  width: 140px;
+  height: 45px;
+  padding: 5px;
+  display: block;
+  margin: 0 auto;
+  background-color: #444;
+  color: #fff;
+  font-size: 1.3em;
+  border-radius: 6px 6px 6px 6px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+/*********************************************
+ * Task_List Page ****************************
+ *********************************************/
+
+div.task_list {
+  padding: 10px 15px 30px 15px;
+  background-color: #E6E6FA;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+
+div.mytable {
+  margin: auto;
+  width: 80%;
+  min-width: 650px;
+  max-height: 300px;
+  border-radius: 6px 6px 6px 6px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.mytable::-webkit-scrollbar {
+    width: 12px;
+}
+
+.mytable::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+
+.mytable::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #E6E6FA;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+.table_title {
+  width: 90%;
+  margin: auto 0;
+}
+
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 600px;
+  width: 80%;
+  border-radius: 6px 6px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr{
+  background-color: #8FBC8F;
+  color: #fff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr{
+  border-bottom: 1px solid #E6E6FA;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #E6E6FA;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #8FBC8F;
+}
+
+.view-button {
+  background-color: #444;
+  color: #fff;
+  border-radius: 6px 6px 6px 6px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+/*********************************************
+ * Task_detail Page **************************
+ *********************************************/
+
+div.details {
+  padding: 10px 0 30px 15px;
+  background-color: #E6E6FA;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+
+.details form {
+  margin: auto;
+  width: 50%;
+  padding: 20px;
+  display: table;
+  float: center;
+  background-color: #8FBC8F;
+  text-align: center;
+  border-radius: 6px 6px 6px 6px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+form.task_details div {
+  display: inline;
+}
+
+.details1 {
+  width: 300px;
+  font-size: 1.8em;
+  text-align: left;
+  padding: 10px;
+}
+
+.details2 {
+  width: 300px;
+  font-size: 1.8em;
+  color: #fff;
+  text-align: left;
+  padding: 10px;
+}
+
+.details button {
+  width: 200px;
+  height: 45px;
+  padding: 5px;
+  display: block;
+  margin: 0 auto;
+  background-color: #444;
+  color: #fff;
+  font-size: 1.3em;
+  border-radius: 6px 6px 6px 6px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+ /*********************************************
+ * Success Page ******************************
+ *********************************************/
+
+div.success {
+  padding: 10px 0 30px 15px;
+  background-color: #E6E6FA;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+

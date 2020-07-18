@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="../static/main1.css"> 
+	</head>
+	<body>
+		<header>
+			<div class = "container">
+				<h1 class = "logo">Task Manager</h1>
+				<strong><nav>
+					<ul class = "menu">
+						<li><a href="{{url_for('home')}}">Home</a></li>
+						<li><a href="{{url_for('task_new')}}">Add New Task</a></li>
+						<li><a href="{{url_for('task_list')}}">View Task list</a></li>
+					</ul>
+				</nav></strong>
+			</div>
+		</header>
+		<div class = "container-body">
+			{%block content%}
+			{%endblock%}
+		</div>
+	</body>
+</html>

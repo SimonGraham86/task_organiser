@@ -1,0 +1,28 @@
+{%extends "layout.html"%}
+{%block content%}
+<div class = "new_tasks">
+	<h2>Task Details</h2>
+	<p>You can edit the task details below.</p>
+	
+	<form  action="{{url_for('success2')}}" method="POST">
+		
+		<input type="hidden" name="task_id" value="{{ task.id }}">
+
+		<label for="task_title">Title:</label>
+		<input type="text" name="task_title" value="{{ task.title }}" required> <br>
+
+		<label for="due_date">Due Date:</label>
+		<input type="date" name="due_date" value="{{ task.due_date }}" required> <br>
+
+		<label for="time_complete">Est. Time to Complete (hrs):</label>
+		<input type="number" name="time_complete" step="0.5" value="{{ task.est_time }}" required> <br>
+		
+		<label for="details">Details:</label>
+		<textarea name="details" wrap="soft" required>{{ task.details }}</textarea> <br><br>
+
+		<button type="submit">Submit</button> <br>
+		<button type="reset">Clear</button>
+	</form>
+	<br>
+</div>
+{%endblock%}
