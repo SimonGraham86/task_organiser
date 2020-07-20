@@ -26,14 +26,14 @@ This is used to create and manage the database. If you do not have this software
 ### Creating the database
 From **pgAdmin4** window, do the following:
 
-
+![alt text](https://github.com/SimonGraham86/task_organiser/blob/master/readme_files/my_gif1.gif)
 
 Ensure that the databae name is *Task_manager*.
 
 ### Creating the data tables
 From your command prompt and once you're in the correct directory, do the following:
 
-
+![alt text](https://github.com/SimonGraham86/task_organiser/blob/master/readme_files/my_gif2.gif)
 
 1. Open up a **python** shell.
 2. Type `from db_queries import db`.
@@ -44,7 +44,7 @@ From your command prompt and once you're in the correct directory, do the follow
 
 From your command prompt, once you're in the correct directory, enter `python tasksite.py`
 
-
+![alt text](https://github.com/SimonGraham86/task_organiser/blob/master/readme_files/my_gif3.gif)
 
 ## Contributions
 If anyone would like to contribute on ways to improve the code, that would be greatly appreciated.
