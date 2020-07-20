@@ -2,9 +2,9 @@
 
 This app was created to help manage individual tasks that I had to complete on a daily basis.
 
-It allows me to enter new and manage existing tasks; view separate lists of tasks due to completed, task that were overdue, and tasks that were recently completed; and view a dashboard of analytical graphs, making it easier to manage my tasks.
+It allows me to enter new and manage existing tasks; view separate lists of tasks due to completed, tasks that were overdue, and tasks that were recently completed; and view a dashboard of interactive graphs, making it easier to manage my tasks.
 
-This app was built in a **Flask** framework, and is connected to a simple **postgres** database using **SALAlchemy**. The tables and graphs are created using **pandas** and **bokeh**. **html** and **CSS** were used to create the front end of the application.
+This app was built in a **Flask** framework, and is connected to a simple **postgres** database using **SALAlchemy**. The tables and graphs were created using **pandas** and **bokeh**. **HTML** and **CSS** were used to create the front end of the application.
 
 ## Installation
 ### Libraries
@@ -28,7 +28,7 @@ From **pgAdmin4** window, do the following:
 
 ![alt text](https://github.com/SimonGraham86/task_organiser/blob/master/readme_files/my_gif1.gif)
 
-Ensure that the databae name is *Task_manager*.
+Ensure that the database name is *Task_manager*.
 
 ### Creating the data tables
 From your command prompt and once you're in the correct directory, do the following:
@@ -50,7 +50,7 @@ From your command prompt, once you're in the correct directory, enter `python ta
 If anyone would like to contribute on ways to improve the code, that would be greatly appreciated.
 
 ## Support
-If there are any issue or any questiosn about the code, please let me know through the issue tracker.
+If there are any issue or any questions about the code, please let me know through the issue tracker.
 
 
 
