@@ -33,12 +33,11 @@ class Task(db.Model):
 # Functions to query database or perform actions
 #-------------------------------------------------------------------------------------------------------------------------
 
-#-------------------------------------------------------------------------------------------------------------------------
 def get_dashboard_info():
 
 	#Timeframes needed for queries
 	today = date.today()
-	start_of_week = today - timedelta(days=today.weekday()) 
+	start_of_week = today - timedelta(days=today.weekday()) - timedelta(days=7) 
 	end_of_week = start_of_week + timedelta(days=6) 
 	start_of_last_week = start_of_week - timedelta(days=7) 
 	end_of_last_week = start_of_last_week + timedelta(days=6) 
@@ -122,7 +121,7 @@ def get_dashboard_info():
 
 	#Dashboard layout
 	layout = pandas_bokeh.column(p_bar, p_bar2)
-	layout_html = pandas_bokeh.embedded_html(layout)
+	#layout_html = pandas_bokeh.embedded_html(layout)
 
 	script1, div1 = components(layout)
 	cdn_js = CDN.js_files[0]
