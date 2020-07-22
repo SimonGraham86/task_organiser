@@ -4,7 +4,7 @@ This app was created to help manage individual tasks that I had to complete on a
 
 It allows me to enter new and manage existing tasks; view separate lists of tasks that are due, overdue and recently completed; and view a dashboard of interactive graphs, making it easier to manage my tasks.
 
-This app was built in a **Flask** framework, and is connected to a simple **postgres** database using **SALAlchemy**. The tables and graphs were created using **pandas** and **bokeh**. **HTML** and **CSS** were used to create the front end of the application.
+This app was built in a **Flask** framework, and is connected to a simple **postgres** database using **SQLAlchemy**. The tables and graphs were created using **pandas** and **bokeh**. **HTML** and **CSS** were used to create the front end of the application.
 
 ## Installation
 ### Libraries
